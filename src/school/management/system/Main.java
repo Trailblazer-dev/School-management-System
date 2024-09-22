@@ -30,7 +30,20 @@ public class Main {
         studentList.add(Elizabeth);
 
         School Hub = new School(teacherList,studentList);
+        Brian.payFees(20000);
+        Bornface.payFees(6000);
+        System.out.println("total Money earned "+Hub.getTotalMoneyEarned());
 
-        System.out.println("totalMoney earned "+Hub.getTotalMoneyEarned());
+        System.out.println("-----Making HUB School PAY SALARY-----");
+
+    Lizzy.receiveSalary(Lizzy.getSalary());
+        System.out.println("Hub has paid "+Lizzy.getName()+" and now total money earned is "+Hub.getTotalMoneyEarned());
+
+        Kelvin.receiveSalary(Kelvin.getSalary());
+
+        System.out.println("Hub has paid "+ Kelvin.getName()+" and the money earned is "+ Hub.getTotalMoneyEarned());
+
+        System.out.println(Brian);
+        System.out.println(Lizzy);
     }
 }
